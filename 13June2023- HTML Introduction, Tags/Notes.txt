@@ -1,0 +1,104 @@
+Full Stack -  MEAN, MERN and Java Stack 
+
+Fundamentals of Web Programming:
+
+HTML 
+
+CSS 
+
+Javascript 
+
+HTML5
+
+CSS3 
+
+Bootstrap
+
+
+HTML: 
+
+Hypextext Mark up Language  is used to describe the static web 
+pages on a browser.
+
+We cannot create dynamic web pages using HTML , however we can use Javascript 
+to develop it.
+
+Mark up Language:
+
+It is a tag based Language where the data / ui is represented by using 
+tags. 
+
+Tag: A tag is a keyword that is enclosed in angular brackets.
+
+syntax:  <html>, <head>, <body>, <h1>.....
+
+Every opening tag should have a closing tag, if the tag holds some 
+content.
+
+ <h1>Hello World </h1>
+
+
+ HTML Document Structure: 
+
+  <html>
+
+    <head>
+              
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+  </html>
+
+
+
+First HTML Web Page:
+
+
+<html>
+
+<head>
+
+    <title>
+        Digital Lync Tech
+    </title>
+
+    <link rel="icon" type="image/jpeg" href="./images/favicon.jpeg">
+
+</head>
+
+<body>
+
+
+    <img src="mobile.jpeg">
+
+    <img src="abc.png">
+
+</body>
+
+</html>
+
+
+Q1. How does the browser display html pages on the UI?
+
+Whenever we provide a html page to the browser, then browser creates 
+a DOM (Document Object Model) tree.
+
+The render engine picks up the content from the DOM tree and renders on the UI. 
+
+If any updates happen to the DOM, then the render engine picks the latest content from DOM and displays it on the 
+UI.
+
+
+
+
+
+
+
+
+
