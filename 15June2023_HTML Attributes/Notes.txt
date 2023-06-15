@@ -1,0 +1,146 @@
+HTML Attributes:
+
+An attribute is a key value pair which enhances the capability of 
+a html element.
+
+
+ <input type="password">
+
+    <input type="radio">
+
+    <input type="checkbox">
+
+
+From the above, type is an attribute and password,radio, checkbox are 
+values of the attribute. 
+
+
+Every HTML element may have attributes. 
+
+An attribute can have one or more values.  
+
+example:
+
+type -> text, date, number, password, email,date-time...
+
+We can categorize the HTML attributes into 3 types. 
+
+1. element specific attributes : 
+
+These attributes are created to specific elements which means these 
+attributes cannot be used with other elements.
+
+ <img src="https://rukminim1.flixcart.com/image/200/200/knyxqq80/dslr-camera/r/y/x/digital-camera-eos-m50-mark-ii-eos-m50-mark-ii-canon-original-imag2gzkexzqhyhu.jpeg?q=70"
+        alt="The image is not available">
+
+
+
+From the above src,alt are the element specific attributes.
+
+
+
+<textarea cols="30" rows="10"></textarea>
+
+cols and rows are the element specific attributes of the text area.
+
+
+2. global attributes :
+
+These attributes can be used with any html element which means these global attributes are applicable 
+to every element in html.
+
+
+Ref Link: https://www.w3schools.com/tags/ref_standardattributes.asp
+
+
+
+<html>
+
+<head>
+
+    <style>
+        .theme1 {
+            color: red;
+            background-color: yellowgreen;
+            font-family: cursive
+        }
+
+        .theme2 {
+            color: green;
+            background-color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;color:grey; background-color: black">Digital Lync Technologies</h1>
+
+    <h2 id="location" class="theme1">Hitech City</h2>
+
+    <h3 class="theme2">Opposite to Cyber Towers, Hyderabad</h3>
+
+</body>
+
+</html>
+
+
+
+From the above id, class, style are the global attributes.
+
+
+3. event attributes:
+
+Any action is considered to be an event. 
+
+Clicking on a button, entering text in a text field is also an event....
+
+using event attributes we can specify what event should occur based on the user interaction.
+
+
+
+<html>
+
+<head>
+
+    <style>
+        .theme1 {
+            color: red;
+            background-color: yellowgreen;
+            font-family: cursive
+        }
+
+        .theme2 {
+            color: green;
+            background-color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 onclick="gotoWebsite()">Digital Lync Technologies</h1>
+
+
+    <script>
+
+        function gotoWebsite() {
+            window.location.href = "https://www.digital-lync.com/full-stack-training-in-hyderabad.html";
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Restrict a html input element to have a paste feature. 
+
+
