@@ -1,0 +1,26 @@
+
+HTML Editors: 
+
+Notepad, Edit plus, Atom, sublime, visual studio code (recommended)
+
+Link to download VS Code: https://code.visualstudio.com/
+
+
+
+HTML Document Structure:
+
+
+<html>
+
+  <head>
+
+  </head>
+
+
+  <body>
+
+  </body>
+
+</html>
+
+
