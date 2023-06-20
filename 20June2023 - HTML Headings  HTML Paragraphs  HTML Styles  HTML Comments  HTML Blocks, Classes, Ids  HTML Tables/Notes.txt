@@ -1,0 +1,380 @@
+HTML Headings:
+
+HTML Provides headings from h1 to h6. based on the requirement, we can 
+use any header.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>This is header h1</h1>
+    <h2>This is header h2</h2>
+    <h3>This is header h3</h3>
+    <h4>This is header h4</h4>
+    <h5>This is header h5</h5>
+    <h6>This is header h6</h6>
+
+</body>
+
+</html>
+
+HTML Paragraphs: 
+
+using <p> tag we can create Paragraphs. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum</p>
+
+
+</body>
+
+</html>
+
+HTML Styles:
+
+HTML supports styles using <style> tag and style attribute. 
+
+<html>
+
+<head>
+
+    <style>
+        h2 {
+            font-family: cursive;
+            color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center; color:green">Digital Lync Technologies</h1>
+    <h1>Hyderabad</h1>
+    <h2>Cyber Towers </h2>
+    <h2>Hitech City</h2>
+    <h2>500081</h2>
+</body>
+
+</html>
+
+
+HTML Comments: 
+
+<!--     comment    --> 
+
+HTML Blocks:
+
+HTML tags are categorized in to 2 types. 
+
+1. Block level elements :  Any element that starts in the new line and 
+occupies the complete possible width is known as Block level element.
+
+ex:  h1, h2.... h6, p....
+
+<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+
+2. inline elements: Any element that starts in the same line and occupies 
+only content level width is known as inline element.
+
+ex: span, a, input...
+
+
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+
+
+
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+
+    <h1 style="background-color: grey">Header 1</h1>
+
+    <span>This is span</span>
+
+    <span style="background-color: indianred">another span</span>
+
+    <p>This is para</p>
+
+</body>
+
+</html>
+
+Classes: 
+
+class attribute is used to support css. 
+
+<html>
+
+<head>
+
+    <style>
+        .redColor {
+            color: red
+        }
+
+        .blackBg {
+            background-color: black
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="redColor blackBg">This is a header!</h1>
+</body>
+
+</html>
+
+Ids: 
+
+ids are used to identify an element uniquely.
+
+
+<html>
+
+<head>
+
+    <style>
+        .redColor {
+            color: red
+        }
+
+        .blackBg {
+            background-color: black
+        }
+    </style>
+
+</head>
+
+<body>
+    <input id="username" type="text">
+    <input type="password" id="password">
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+create 2 classes, apply these classes to any 2 html elements. 
+
+
+HTML Tables: 
+
+A table is a collection of rows and columns. 
+
+tag: <table>, <tr>, <th>, <td>
+
+<html>
+
+<head>
+
+    <style>
+        /* tr:nth-child(even) {
+            background-color: grey
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <table width="100%" border="1" style="text-align: center">
+
+        <thead style="background-color:yellowgreen">
+            <th>Sno</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact No</th>
+            <th>Address</th>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
+
+
+HTML Comments: 
+
+For styles:  /*         */ 
+
+For javascript:   // or  /*      */ 
+
+
+For HTML:   <!-- COMMENT -- > 
+
+
+
+
+
+
+
