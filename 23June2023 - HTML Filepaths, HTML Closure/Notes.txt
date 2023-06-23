@@ -1,0 +1,48 @@
+HTML File Paths: 
+
+There are 2 types of file paths. 
+
+1. absolute path : Complete path
+2. relative path : path from the current directory 
+
+<html>
+
+  <head>
+
+  </head>
+
+
+  <body>
+
+          <!-- absolute path-->
+          <img src="/Users/saikumar/Desktop/7am-fundamentals-web/7AM_Fundamentals/23June2023 - HTML Filepaths, HTML Closure/images/assets/logos/image.jpeg">
+
+            <!-- relative path-->
+
+          <img src="./images/assets/logos/image.jpeg">
+
+  </body>
+
+</html>
+
+
+Problem Statement: 
+
+Create a simple web site with all html concepts. 
+
+Solution: Refer to ECommerce folder
+
+
+
+Task: Implement Login, Register, Contact us pages.
+
+Login - username, password 
+
+Register - Username, password,emailid 
+
+contact - emailid, name, description
+
+
+
+
+
