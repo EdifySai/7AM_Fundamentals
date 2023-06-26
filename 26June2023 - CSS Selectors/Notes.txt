@@ -1,0 +1,65 @@
+CSS: Cascading Style Sheets
+
+using CSS we can beautify the skeletion of HTML.
+
+CSS Selectors:
+
+2 Types: 
+
+Advanced Selectors (Combinators)
+
+Fundamental Selectors
+
+
+Fundamental Selectors:
+
+element selector:
+
+syntax: 
+element_name{
+property: value
+}
+
+<html>
+
+<head>
+
+    <style>
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            font-family: cursive;
+        }
+
+        /* h2 {
+            text-align: center;
+            font-family: cursive;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <h1>Digital Lync Technologies</h1>
+
+    <h1>Hyderabad</h1>
+
+    <h1>Telangana</h1>
+
+    <h2 style="color:orange">Contact #88888888888888</h2>
+
+    <h3 style="color:red">Email : support@digital-lync.com</h3>
+</body>
+
+</html>
+
+
+class selector:
+
+syntax: 
+
+.classname{
+      property: value
+}
+
