@@ -1,0 +1,189 @@
+
+id selector: 
+syntax: 
+
+#id{
+    property: value
+}
+
+<html>
+
+<head>
+
+    <style>
+        #header {
+            text-align: center
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="header">Header</h1>
+
+</body>
+
+</html>
+
+Inserting CSS into HTML(Inline, Internal,External):
+
+Inline CSS: If the css properties are applied to a specific element, is known as inline css. 
+
+ we use style attribute to provide inline css.
+
+ <html>
+
+<head>
+
+
+
+</head>
+
+<body>
+
+    <!-- inline css-->
+
+    <h1 style="text-align: center; color:red">Header</h1>
+
+</body>
+
+</html>
+
+
+Internal CSS:
+
+<html>
+
+<head>
+    <!-- Internal CSS-->
+    <style>
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        #para {
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- inline css-->
+
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+
+    <p id="para">This is some paragraph</p>
+
+</body>
+
+</html>
+
+External CSS:
+
+
+page1.html:
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Digital Lync Technologies</h1>
+
+    <h2>Page 1</h2>
+
+</body>
+
+</html>
+
+page2.html:
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Digital Lync Technologies</h1>
+
+    <h2>Page 2</h2>
+
+</body>
+
+</html>
+
+style.css:
+
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: grey;
+    font-family: cursive
+}
+
+h2 {
+    text-align: center;
+    color: grey
+}
+
+
+code snippets:
+
+page1.html:
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1 style="color:red; font-family: Arial, Helvetica, sans-serif; font-size: 50px">Digital Lync Technologies</h1>
+
+    <h2>Page 1</h2>
+
+</body>
+
+</html>
+
+
+style.css:
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: grey;
+    font-family: cursive
+}
+
+h2 {
+    text-align: center;
+    color: grey
+}
+
+Colors:
+
+property -> color  : <value> 
+
