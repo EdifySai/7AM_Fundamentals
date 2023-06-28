@@ -1,0 +1,238 @@
+Colors:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <!-- <h1 style="text-align: center; color:rgba(8, 104, 107,0.6)">Digital Lync Technologies</h1> -->
+
+
+    <h1 style="text-align: center; color:#004d4d">Digital Lync Technologies</h1>
+
+</body>
+
+</html>
+
+Background:
+
+Most of the times, we come across the background images, background colors etc. 
+
+
+example 1:
+
+
+<html>
+
+<head>
+    <style>
+        body {
+            /* background-image: url('adv.jpeg');
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: fixed; */
+            background: url('adv.jpeg') no-repeat top right fixed
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+    <h1>This is some header</h1>
+
+</body>
+
+</html>
+
+
+
+example 2:
+
+<html>
+
+<head>
+
+    <style>
+        body {
+            background-image: url("bg.jpeg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat
+        }
+
+        input {
+            padding: 10px
+        }
+
+        button {
+            padding: 10px;
+            width: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <form style="margin-left:400px; margin-top:450px">
+
+        <input size="40" type="text" placeholder="enter username"> <br><br>
+        <input size="40" type="text" placeholder="enter password"><br><br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button>Login</button>
+    </form>
+
+</body>
+
+</html>
+
+
+Borders: 
+
+Borders are used to highlight the content in a web page. 
+
+
+
