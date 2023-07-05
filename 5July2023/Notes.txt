@@ -1,0 +1,285 @@
+Outline: 
+
+<html>
+
+<head>
+
+    <style>
+        h1 {
+            border: 5px red solid;
+            margin: 400px 850px 0px 500px;
+            padding: 20px;
+            /* outline-color: green;
+            outline-style: solid;
+            outline-width: 4px; */
+
+            outline: green solid 4px;
+            outline-offset: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <h1>DigitalLync Technologies</h1>
+
+
+</body>
+
+</html>
+
+
+Fonts: 
+
+Most of the times, we stick to a specific font related to text in the web site. 
+
+CSS provides different types of font families to represent fonts. 
+
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        h1 {
+            font-family: "Audiowide", sans-serif;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Hyderabad</h1>
+</body>
+
+</html>
+
+
+Links:
+
+<html>
+
+<head>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+        }
+
+        a:hover {
+            color: orange
+        }
+
+        a:visited {
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html">Home</a>
+
+    <a href="login.html">Login</a>
+
+    <a href="register.html">Register</a>
+
+</body>
+
+</html>
+
+
+Tables:
+
+<html>
+
+<head>
+
+    <style>
+        /* tr:nth-child(even) {
+            background-color: grey
+        } */
+
+        body {
+            font-family: cursive
+        }
+
+        tr:hover {
+            background-color: yellow;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <table width="100%" border="1" style="text-align: center">
+
+        <thead style="background-color:yellowgreen">
+            <th>Sno</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact No</th>
+            <th>Address</th>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Kiran</td>
+                <td>Kiran@gmail.com</td>
+                <td>9099999999</td>
+                <td>Hyderabad</td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
+
+
+Combinators:
+
