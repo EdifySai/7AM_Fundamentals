@@ -1,0 +1,268 @@
+Combinators:
+
+descendant selector (space): 
+
+
+syntax: 
+
+element anotherelement{
+
+
+
+}
+
+
+<html>
+  <head>
+   <style>
+       div h1{
+            text-align:center;
+            color:red
+        }
+   </style>
+  </head>
+  <body>
+          <div>
+
+                <h1>This is header 1</h1>
+    
+          </div>
+
+          <div>
+ <h1>This is header 4</h1>
+          </div>
+
+            <div>
+ <h1>This is header 5</h1>
+          </div>
+           <h1>This is header2 </h1>
+           <h1>This is header3</h1>
+
+  </body>
+
+</html>
+
+
+ex-2:
+
+<html>
+  <head>
+   <style>
+       div h1{
+            text-align:center;
+            color:red
+        }
+   </style>
+  </head>
+  <body>
+          <div>
+
+                <h1>This is header 1</h1>
+
+                 <div>
+
+                        <h1>This is header 6 </h1> 
+
+                         <div>
+     
+                               <h1>This is header 7 </h1>
+
+                         </div>
+                
+                 </div>
+    
+          </div>
+
+          <div>
+ <h1>This is header 4</h1>
+          </div>
+
+            <div>
+ <h1>This is header 5</h1>
+          </div>
+           <h1>This is header2 </h1>
+           <h1>This is header3</h1>
+
+  </body>
+
+</html>
+
+
+child selector (>):
+
+
+
+<!--  > ,  + , <space>-->
+
+<html>
+
+  <head>
+   <style>
+       div > h1{
+            text-align:center;
+            color:red
+        }
+
+   </style>
+  </head>
+  <body>
+          <div>
+
+                <h1>This is header 1</h1>
+                 <h1>This is header 11</h1>
+                 <div>
+                       <h1>This is header 9 </h1>
+                       
+
+                        <section>
+                        <h1>This is header 12</h1>
+
+                            <h1>This is header 10 </h1>
+
+                        </section>
+
+                 </div>
+
+                 <section>
+
+                        <h1>This is header 6 </h1> 
+
+                 </section>
+
+                         <section>
+     
+                               <h1>This is header 7 </h1>
+
+                         </section>
+    
+          </div>
+
+          <div>
+ <h1>This is header 4</h1>
+  
+       <section>
+                 <h1>This is header 8 </h1>
+       </section>
+
+        </div>
+
+           <h1>This is header2 </h1>
+           <h1>This is header3</h1>
+
+  </body>
+
+</html>
+
+
+adjacent sibling selector (+) :
+
+
+<!--  > ,  + , <space>-->
+
+<html>
+
+  <head>
+   <style>
+       div + h1{
+            text-align:center;
+            color:red
+        }
+
+   </style>
+  </head>
+  <body>
+          <div>
+
+                <h1>This is header 1</h1>
+                 <h1>This is header 11</h1>
+                 <div>
+                       <h1>This is header 9 </h1>
+                       
+
+                        <section>
+                        <h1>This is header 12</h1>
+
+                            <h1>This is header 10 </h1>
+
+                        </section>
+
+                 </div>
+
+                 <section>
+
+                        <h1>This is header 6 </h1> 
+
+                 </section>
+
+                         <section>
+     
+                               <h1>This is header 7 </h1>
+
+                         </section>
+    
+          </div>
+
+           <h1>This is some other heading </h1>
+            <h1>This is some other heading 2123 </h1>
+
+          <div>
+ <h1>This is header 4</h1>
+  
+       <section>
+                 <h1>This is header 8 </h1>
+       </section>
+
+        </div>
+           <h1>This is header2 </h1>
+           <h1>This is header3</h1>
+  </body>
+
+</html>
+
+general sibling selector (~):
+
+
+<!--  > ,  + , <space>-->
+
+<html>
+
+  <head>
+   <style>
+       div ~ h1{
+            text-align:center;
+            color:red
+        }
+
+   </style>
+  </head>
+  <body>
+         
+          <div>
+                <h1>This is header1 </h1>
+                <h1>This is header2 </h1>
+
+                 <section>
+
+                 </section>
+                  <h1>This is final </h1>
+          </div>
+
+           <h1>This is header 3 </h1> 
+           <h1>This is header 4 </h1>
+            <h1>This is header 5</h1>
+
+           <section>
+                  <h1>This is header 6 </h1>
+                  <h1>This is header 7 </h1>
+           </section>
+
+           <h1>This is header 8</h1>
+           <h1>This is header 9</h1>
+
+  </body>
+
+</html>
+
+
+Pseudo Classes:
+
