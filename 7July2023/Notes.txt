@@ -1,0 +1,81 @@
+Pseudo Classes and Elements:
+
+Pseudo Classes: 
+
+
+selector:pseudo-class {
+  property: value;
+}
+
+
+<html>
+
+<head>
+
+    <style>
+        a:hover {
+            background-color: black;
+            color: whitesmoke;
+            text-decoration: none
+        }
+
+        a:visited {
+            color: green
+        }
+
+        a {
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">login</a>
+
+</body>
+
+</html>
+
+Psuedo Elements:
+
+selector::pseudo-element {
+  property: value;
+}
+
+
+Introduction to Javascript:
+
+JS is scripting language and later got the capabilities of a programming language 
+ used to provide dynamic nature to the web pages, however, JS (node js) can also be used for developing 
+server side applications to handle data processing.
+
+JS was developed by brendan to support a browser called netscape navigator.
+
+
+Variables:
+
+A variable is an identifier which is used to store / identify some data so that the data can be used 
+for further processing. 
+
+syntax: 
+
+  var var_name = value; 
+
+  var is keyword 
+
+  var_name is variable name 
+
+  value is data. 
+
+  
+
+
+
+
+
+
+
