@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <i onclick="likeCount()" class="fa fa-thumbs-up" style="font-size: 60px"></i>
+    <h1 id="count">0</h1>
+    <i onclick="dislikeCount()" class="fa fa-thumbs-down" style="font-size: 60px"></i>
+
+    <script>
+
+
+        var counter = 0;
+
+        function likeCount() {
+            counter = counter + 1;
+            document.getElementById("count").innerText = counter;
+        }
+        function dislikeCount() {
+            if (counter > 0) {
+                counter = counter - 1;
+                document.getElementById("count").innerText = counter;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

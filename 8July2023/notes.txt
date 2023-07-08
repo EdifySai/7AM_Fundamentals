@@ -1,0 +1,257 @@
+
+Types of Variables:
+
+There are 2 types of variables 
+
+1. Local Variables  : Any variable that is created inisde a function, then 
+it is known as local variable.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        function f1() {
+            var a = 100; // local variables
+            var b = 200; // local variables
+            console.log(a);
+            console.log(b);
+        }
+        f1();
+        console.log(a); // accessing a local variable
+    </script>
+</body>
+
+</html>
+
+2. Global Variables :
+
+Any variable created outside of function is known as global variable. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var a = 10;
+        var b = 20;
+
+        console.log(a); // 10
+        console.log(b); //20
+
+        function f1() {
+            console.log(a); // 10 
+            console.log(b); // 20
+        }
+        f1();
+    </script>
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var a = 10;
+        var b = 20;
+        function f1() {
+            var a = 100;
+            var b = 200;
+            console.log(a); // 100
+            console.log(b); // 200
+        }
+        f1();
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create a login system using html and javascript. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="username" placeholder="enter username">
+    <input type="password" id="password" placeholder="enter password">
+    <button onclick="login()">Login</button>
+    <script>
+        function login() {
+            console.log(document);
+            var username = document.getElementById("username").value; // local variables
+            var password = document.getElementById("password").value; // local variables
+            console.log(username);
+            console.log(password);
+
+            if (username == "sai" && password == "sai") {
+                alert("login success");
+            }
+            else {
+                alert("login failure")
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Implement the like feature of youtube.
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <i onclick="likeCount()" class="fa fa-thumbs-up" style="font-size: 60px"></i> <span id="count">0</span>
+    <script>
+        var likes = 0;
+        function likeCount() {
+
+            likes = likes + 1;
+            document.getElementById("count").innerText = likes;
+        }
+    </script>
+</body>
+
+</html>
+
+Variable Hoisting:
+
+It is a default process where all the variables ( local, global) will be declared at the top of 
+the page before the execution of the code. 
+
+ var a = 100;
+        var b = 200;
+        console.log(a);
+        console.log(b);
+
+        /*
+
+          After variable hoisting
+
+          var a,b;
+          a=100;
+          b=200;
+          console.log(a);
+          console.log(b);
+
+        */
+
+ex-2:
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+
+
+        console.log(a);
+        console.log(b);
+        var a = 100;
+        var b = 200;
+
+        /*
+
+          After variable hoisting
+
+              var a,b; // undefined, undefined
+              console.log(a); // undefined
+              console.log(b); // undefined
+              a=100;
+              b=200;
+
+        */
+
+    </script>
+</body>
+
+</html>
+
+ex-2:
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+
+
+        var a = 100;
+        function f1() {
+            console.log(a);
+            var a = 20;
+        }
+        f1();
+
+        /*
+
+              var a;
+              a=100;
+              function f1(){
+                 var a;
+                 console.log(a); //
+                 a=20;
+              }
+
+              f1();
+
+
+        */
+
+
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Implement like and dislike  feature where if the user clicks on like icon, increment by 1 and if the 
+user clicks on dislike , then decrement by 1. 
+
+
+ex:   like  10   dislike 
+      like  9 
+      like 10
+      like 11     dislike 
+       like 10
+
+
