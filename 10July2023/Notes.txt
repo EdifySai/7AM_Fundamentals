@@ -1,0 +1,192 @@
+Datatypes:
+
+JS provides 2 types of datatypes. 
+
+1. primitive types : number, boolean and string
+2. non primitive types: arrays and objects 
+
+other types: undefined and null 
+
+1. primitive types : number, boolean and string
+
+number: 
+
+any number (decimal / non decimal) can be stored in number type.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var age = 21;
+        var rating = 4.4;
+        var mobile = 9010101010;
+        console.log(age);
+        console.log(rating);
+        console.log(mobile);
+        console.log(typeof age);
+        console.log(typeof rating);
+        console.log(typeof mobile);
+    </script>
+</body>
+
+</html>
+
+
+boolean:  to store true / false 
+
+ var isWorkDone = true;
+        var isUserLoggedIn = true;
+        if (isUserLoggedIn == true) {
+            console.log("user logged in");
+        }
+
+String: Strings are very important in any project because the data 
+in the application will be in String format(most of the times).
+
+we can create Strings in 2 ways.
+
+1. using double quotes (" ")
+2. using single quotes(' ')
+
+syntax: 
+
+var username="kiran"; 
+var password = "rajesh@123";
+var email='kiran@gmail.com'; 
+
+String functions:
+
+trim(), toLowerCase(), concat()
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <input size="40" type="text" id="email" placeholder="enter your email here">
+    <button onclick="next()">Next</button>
+
+    <script>
+
+        function next() {
+            var email = document.getElementById("email").value;
+            email = email.trim();
+            email = email.toLowerCase();
+            if (email.includes('@gmail.com')) {
+
+            }
+            else {
+                email = email.concat("@gmail.com")
+            }
+
+            document.getElementById("email").value = email;
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+Non Primtive Types: 
+
+Arrays and Objects
+
+Arrays: An array is a linear data structure which is used to store the data in the sequential order. 
+
+syntax: 
+
+var arr =[10,20,30,40,50];
+
+In JS, Arrays can store different type of elements. 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var data = [10, 20, 10, 20, true, false, "hello", "how", "are", "you"];
+        console.log(data);
+        console.log(data.length);
+        console.log(data[0]);
+        console.log(data[5]);
+        console.log(data[9]);
+        console.log(data[10]);
+        console.log(data.indexOf(true)); // 4
+    </script>
+</body>
+
+</html>
+
+Object: 
+
+An Object is a key-value pair which is used to store the realtime objects in the form of javascript 
+objects. 
+
+syntax: 
+
+var obj = {
+      key:value, 
+      key: value, 
+      key: value,
+      .
+      .
+      .
+
+}
+
+key is a String and should be unique.
+value can be of any datatype and need not to be unique. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var product = {
+            name: "Product 1",
+            price: 200,
+            description: "One of the best products",
+            seller: {
+                name: "abc",
+                address: "hyderabad",
+                companyName: "xyz"
+            }
+        }
+
+        console.log(product.name);
+        console.log(product.price);
+        console.log(product.seller.name);
+        console.log(product.imageURL);
+            </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
