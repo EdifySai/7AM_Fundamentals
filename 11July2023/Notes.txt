@@ -1,0 +1,278 @@
+Operators and control statements:
+
+Operators:
+
+An Operator is a special keyword or a symbol that provides some 
+functionality.
+
+Ex:  +, -, %, typeof, instanceof...
+
+ 10 + 20 = 30 
+
+ "10" + "10" = 1010
+
+ There are different types of Operators provided by javascript. 
+
+ Arithmetic Operators:
+
+ +, -, *, %(remainder), /(Q), ++, --
+
+ var a = 10, b = 200, c = "30", d = "10s";
+
+        console.log(a + b + c);  // 
+        console.log(c + b + a); // 3020010
+        console.log(a - c); //
+        console.log(a - d);
+        console.log(a * c);
+        console.log(a * d);
+
+Comparision Operators:
+
+>,<,>=,<=, ==, ===, !=,?: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var a = 1110, b = 200, c = "10", d = "10s";
+
+        console.log(a > b);
+        console.log(a < b);
+        console.log(a == b);
+        console.log(a == c); // checks only for content
+        console.log(a === c); // checks  for content and datatype
+        console.log(a == d); //
+        console.log(a != b);
+        a > b ? console.log("a > b") : console.log("a < c");
+
+    </script>
+
+</body>
+
+</html>
+
+Problem Statement:
+
+Create a login system (username, password)
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="username" placeholder="enter username">
+    <input type="text" id="password" placeholder="enter password">
+    <button onclick="login()">Login</button>
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            username == "digital" && password == "lync" ? alert("login success") : alert("login failure")
+        }
+    </script>
+</body>
+
+</html>
+
+
+Logical Operators: 
+
+AND (&&) , OR(||), NOT(!)
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <!-- <input type="text" id="username" placeholder="enter username">
+    <input type="text" id="password" placeholder="enter password">
+    <button onclick="login()">Login</button> -->
+    <script>
+        // function login() {
+        //     var username = document.getElementById("username").value;
+        //     var password = document.getElementById("password").value;
+        //     username == "digital" && password == "lync" ? alert("login success") : alert("login failure")
+        // }
+        var a = 100, b = 200, c = 300;
+        console.log(a == b && a == c);
+        console.log(a < b && b > c);
+        console.log(a < b && b > a);
+        console.log(a < b && b < c);
+        console.log(a < b || b > c);
+        console.log(a > b || a < c);
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement:
+
+Create a login system (mobile / email, password);
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="emailOrMobile" placeholder="enter username">
+    <input type="text" id="password" placeholder="enter password">
+    <button onclick="login()">Login</button>
+    <script>
+        function login() {
+            var emailOrMobile = document.getElementById("emailOrMobile").value;
+            var password = document.getElementById("password").value;
+            (emailOrMobile == "digital" || emailOrMobile == "9010101010") && password == "lync" ? alert("login success") : alert("login failure")
+        }
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement:  Task
+
+Toggle the instagram like icon using logical not operator. 
+
+
+typeof:
+
+If we want to know the type of the data stored in a variable, then we can use typeof operator. 
+
+ var a = 100;
+
+ console.log(typeof a);
+
+
+ instanceof:
+ used to check whether an object belongs to some constructor or not.
+
+ <html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        function Employee() {
+
+        }
+        var emp1 = new Employee();
+        console.log(emp1);
+        console.log(emp1 instanceof Employee);
+        var str = new String("hello");
+        console.log(str instanceof Employee);
+        console.log(str instanceof String);
+    </script>
+</body>
+
+</html>
+
+Control Statements:
+
+There are 3 types of control statements.
+
+1. Sequential Statements: 
+
+These statements gets executed line by line and from top to bottom. 
+ if, if-else, switch
+2. Iterative Statements 
+ while, do-while and for loop
+3. Jump Statements
+return, continue,break
+
+
+1. Sequential Statements: 
+
+if:
+syntax:
+ 
+  if(test-condition){
+      // code
+  }
+
+
+  <html>
+
+<head>
+
+</head>
+<body>
+    <script>
+        var password = "abc1";
+        if (password == "abc") {
+            console.log("matched")
+        }
+    </script>
+</body>
+
+</html>
+
+
+if-else:
+
+if(test-condition){
+ // code
+}
+else{
+// code
+}
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var password = "abc";
+        if (password == "abc") {
+            console.log("matched")
+        }
+        else {
+            console.log("not matched");
+        }
+    </script>
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var password = "";
+        if (password) {
+            console.log("matched")
+        }
+        else {
+            console.log("not matched");
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
