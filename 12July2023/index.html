@@ -1,0 +1,28 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+      <ol id="instructions">
+
+      </ol>
+
+      <script>
+            var instrctionsArr = ["test is for 20 mins", "no negative marks", "passing is 50%", "you can reattempt the exam only 3 times", "Do not refresh your page while attempting the exam"]
+            var index = 0;
+            var listItems = "";
+            while (index < instrctionsArr.length) {
+                  listItems = listItems + "<li>" + instrctionsArr[index] + "</li>"
+                  index++;
+
+            }
+
+            document.getElementById("instructions").innerHTML = listItems;
+
+
+      </script>
+</body>
+
+</html>

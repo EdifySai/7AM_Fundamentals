@@ -1,0 +1,140 @@
+Switch case:
+
+syntax: 
+
+ switch(choice){
+   case value1:  // code 
+   case value2:  //code 
+   .
+   .
+   .
+   .
+   case valuen:  // code 
+   default: // code
+ }
+
+code sample:
+
+ <html>
+
+<head>
+
+</head>
+
+<body>
+
+      <script>
+            var choice = "mean";
+            switch (choice) {
+                  case "java": console.log("60 hours"); break;
+                  case "react": console.log("30 hours"); break;
+                  case "angular": console.log("25 hours"); break;
+                  case "mean": console.log("90 hours"); break;
+                  default: console.log("This course is not available");
+            }
+      </script>
+
+</body>
+
+</html>
+
+
+
+Problem Statement: 
+
+Create a drop down list of districts, based on the user selection, display 
+the test centers.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+      <select id="district" onchange="userChoice()">
+            <option>Select test center</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="rangareddy">RangaReddy</option>
+            <option value="adilabad">Adilabad</option>
+            <option value="medak">Medak</option>
+            <option value="nalgonda">Nalgonda</option>
+      </select>
+
+      <h1 id="testCenters"></h1>
+
+      <script>
+            function userChoice() {
+                  var choice = document.getElementById("district").value;
+                  console.log("choice", choice);
+
+                  var testCenters = document.getElementById("testCenters");
+
+                  switch (choice) {
+                        case "hyderabad": testCenters.innerHTML = "Nagole, Uppal, Kothaguda"; break;
+                        case "rangareddy": testCenters.innerHTML = "Rajendra Nagar, Manneguda, Shad Nagar"; break;
+                        case "adilabad": testCenters.innerHTML = "Railway Track"; break;
+                        case "medak": testCenters.innerHTML = "Pillikotal"; break;
+                        case "nalgonda": testCenters.innerHTML = "Miryalguda, RTA Nalgonda"; break;
+                        default: testCenters.innerHTML = "";
+                  }
+            }
+      </script>
+</body>
+
+</html>
+
+
+
+
+Iterative Statements:
+
+while, do-while, for 
+
+syntax: 
+
+while(test-condition){
+ // code
+}
+
+As long as the test condition is true, the loop will be executed. once the test condition becomes 
+false, then the control will exit out of the while. 
+
+ var i = 1;
+
+            while (i <= 10) {
+                  console.log(i);
+                  i++;
+            }
+
+
+code:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+      <script>
+
+            var users = ["kiran", "rajesh", "naveen", "nikhil", "ramesh"];
+
+            var index = 0;
+
+            while (index < users.length) {
+                  console.log(users[index]);
+                  index++;
+            }
+      </script>
+</body>
+
+</html>
+
+
+
+Problem Statement: 
+
+Create a list of instructions and display them on UI. 
+
