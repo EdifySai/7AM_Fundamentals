@@ -1,0 +1,115 @@
+do-while:
+
+The difference between while and do-while is, 
+
+In While, if the test condition is true, then only the control enters in 
+to the block. 
+
+In do-while, without even checking the test condition, do block gets executed for 
+the first time, then based on the condition, the control makes a decision 
+whether to go to do block or not. 
+
+syntax:
+
+do{
+ // code
+}while(test-condition)
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var index = 21;
+        do {
+            console.log(index);
+            index++;
+        } while (index <= 10)
+    </script>
+</body>
+
+</html>
+
+realtime usecase:
+
+do-while can be used to fetch some data and then iterate.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var users = [];
+        var isDataRetrieved = false;
+        var index = 0;
+
+        do {
+            if (isDataRetrieved == false) {
+                // logic 
+                users = ["user1", "user2", "user3", "user4", "user5"];
+                isDataRetrieved = true;
+            }
+            console.log(users[index]);
+            index++;
+        } while (index < users.length)
+
+    </script>
+</body>
+</html>
+
+
+for-loop: 
+
+for loop is an enhanced loop of while loop. 
+
+Syntax: 
+
+for(init; test-condition; inc / dec){
+ // code
+}
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        for (var i = 1; i < 10; i++){
+            console.log(i);
+        }
+    </script>
+</body>
+
+</html>
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        var users = ["user1", "user2", "user3", "user4", "user5"];
+        for (var i = 0; i < users.length; i++) {
+            console.log(users[i]);
+        }
+    </script>
+</body>
+
+</html>
+
+Problem Statement: 
+
+Implement product management system using for loop.
+
+
