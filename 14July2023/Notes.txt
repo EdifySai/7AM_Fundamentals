@@ -1,0 +1,186 @@
+Jump Statements:
+
+break,continue,return 
+
+break: to terminate a block 
+
+example: switch case
+
+continue: to skip an iteration. 
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        for (var i = 0; i < 10; i++) {
+            if (i == 2) {
+                continue;
+            }
+            console.log(i);
+        }
+    </script>
+
+</body>
+
+</html>
+
+return: 
+to exit / terminate a function.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        function f1() {
+            var a = 100;
+            if (a > 20) {
+                console.log(a);
+                return;
+            }
+            console.log(a * a);
+            console.log(a * a * a);
+        }
+        f1();
+
+    </script>
+
+</body>
+
+</html>
+
+
+Functions:
+
+A function is a block of code that takes an input(optional), process it and 
+provides some functionality.
+
+syntax: 
+function function_name(params){
+ // code 
+}
+  function_name(arguments);
+
+
+  function f1(a, b) {
+            console.log(a, b);
+        }
+        f1(10, 20);
+
+
+Anonymous Functions:
+
+A function without a name is known as anonymous function. 
+
+In JS, We can pass a function as an argument. 
+
+function f1(a) {
+            a();
+        }
+        f1(function () {
+            console.log("anonymous function")
+        });
+
+
+  var arr = [10, 20, 30, 40, 50];
+        arr.forEach(function (value, index) {
+            console.log(value);
+            console.log(index);
+        });
+
+Function Expressions:
+
+If we refer an anonymous function with a variable name, then it is known as 
+function expression. 
+
+
+var fe = function(){
+
+     // code
+}
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        function f1(a) {
+            a();
+        }
+        function f2(b) {
+            b();
+        }
+        function f3(c) {
+            c();
+        }
+
+        var arg = function () {
+            console.log("anonymous function ");
+        };
+        f1(arg);
+        f2(arg);
+        f3(arg);
+
+        arg = null;
+    </script>
+</body>
+
+</html>
+
+
+First class functions: 
+
+If a function can be assigned to a variable, can be passed as an argument to 
+another function, can be returned as a value from a function then it is known as 
+first class function.
+
+  function f1() {
+            return function () {
+                console.log("I am returned function");
+            }
+        }
+        var x = f1();
+        x();
+
+IIFE: 
+Immediately invoked function expression:
+
+If we want to create a function that automatically executes by itself then 
+it is known as Immediately invoked function expression / self invoking function. 
+
+syntax:
+
+       (function(){
+
+       })();
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+        (function () {
+            console.log("IIFE called");
+        })();
+    </script>
+</body>
+
+</html>
+
+Web Services: 
+
+
