@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <ul id="prods">
+    </ul>
+    <script>
+        // get the http object
+        (function () {
+            var http = new XMLHttpRequest();
+            console.log(http.readyState);
+            // open the connection 
+            http.open("get", "https://fakestoreapi.com/products");
+            console.log(http.readyState);
+            // send the request 
+            http.send();
+            http.onreadystatechange = function () {
+                console.log("Ready State", http.readyState);
+                var prods = document.getElementById("prods");
+                var listItems = "";
+                if (http.readyState == 4) {
+                    var products = JSON.parse(http.responseText);
+                    console.log(products);
+                    for (var i = 0; i < products.length; i++) {
+                        listItems = listItems + "<li>" + products[i].title + " &nbsp;&nbsp;&nbsp;&nbsp; <img width='64px' height='64px' src=" + products[i].image + "></li>";
+                    }
+                    prods.innerHTML = listItems;
+                }
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
