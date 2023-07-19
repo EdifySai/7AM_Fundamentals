@@ -9,7 +9,6 @@ Implement Restful web services using javascript.
 </head>
 
 <body>
-
     <ul id="prods">
     </ul>
     <script>
@@ -48,3 +47,7 @@ Task:
 Consume the webserices for the following URL.
 
 https://jsonplaceholder.typicode.com/todos
+
+
+
+

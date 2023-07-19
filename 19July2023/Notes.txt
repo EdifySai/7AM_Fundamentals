@@ -1,0 +1,55 @@
+Web Services: 
+
+Any resource that is able to access over internet, then it is a 
+web service.
+
+Front end : UI
+
+backend:  Data processing
+
+Using backend, we create web services.
+
+A web service(RestFul Web Service) is produced by creating a URL that 
+maps to a function in the backend application.
+
+
+call, apply:
+
+
+call: If we want to call other object's function by subsitituting another 
+object, then use call function.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var employee = {
+            name: "kiran",
+            address: "hyderabad",
+            getDetails: function () {
+                return this.name + "\t" + this.address
+            }
+        }
+        //console.log(employee.getDetails());
+
+        var employee2 = {
+            name: "rajesh",
+            address: "banglore"
+        }
+        // console.log(employee2.getDetails());
+
+        console.log(employee.getDetails.call(employee2));
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+

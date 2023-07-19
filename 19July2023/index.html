@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var employee = {
+            name: "kiran",
+            address: "hno,123",
+            getDetails: function (city, state, country) {
+                return this.name + "\t" + this.address + "\t" + city + "\t" + state + "\t" + country
+            }
+        }
+
+        console.log(employee.getDetails("hyd", "ts", 'india'));
+
+        var employee2 = {
+            name: "rajesh",
+            address: "hno567889"
+        }
+        // console.log(employee2.getDetails());
+
+        var details = ["hyderabad", "telangana", "india"]
+        console.log(employee.getDetails.call(employee2, details[0], details[1], details[2]));
+      //  console.log(employee.getDetails.apply(employee2, details));
+
+
+
+    </script>
+
+</body>
+
+</html>
