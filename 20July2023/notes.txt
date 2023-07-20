@@ -1,0 +1,79 @@
+call by value / reference:
+
+
+Call by value is applicable for primitive types.
+
+var a = 100;
+        function f1(b) {
+            console.log(b); // 100 
+            b = 2000;
+        }
+        f1(a); // call by value -> pass the copy of the value of the variable (not the address)
+        console.log(a); // 100
+
+All the primitive types follows call by value. 
+
+
+call by reference:
+
+In CBR, The address of the object / array is passed instead of copy of the variable's value. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var obj = {
+            a: 100,
+            b: 200,
+            c: 300
+        }
+        function f1(obj2) {
+            console.log(obj2);
+            obj2.a = 900;
+            obj2.d = 1200;
+            console.log(obj2.a); // ?900
+        }
+        console.log(obj.d);
+        f1(obj); // call by reference - address of obj is passed
+        console.log(obj.a); // 900
+        console.log(obj.d); // 1200
+        obj.e = 90;
+        console.log(obj);
+
+    </script>
+
+</body>
+
+</html>
+
+Closures:
+
+A Closure is a scope that gets formed whenever a nested function is created. The closure scope allows the 
+inner function to access the outer function resources. 
+
+To create private functions in JS, we use closures. 
+
+We can use closures to define multiple functions related to a module as inner functions. 
+
+function f1() {
+            var a = 100;
+            var b = 200;
+            function f2() {
+                console.log(a); //
+            }
+            function f3() {
+                console.log(b);
+            }
+            f2();
+            f3();
+        }
+        f1();
+
+
+differences between foreach,filter and map. 
