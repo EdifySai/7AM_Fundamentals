@@ -1,0 +1,220 @@
+Problem Statement: 
+
+Display a tiner on the UI using Date Object. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1 id="timer" style="font-size: 100px;"></h1>
+
+    <script>
+
+        setInterval(function () {
+            var date = new Date();
+            var time = addZero(date.getHours()) + ":" + addZero(date.getMinutes()) + ":" + addZero(date.getSeconds());
+            document.getElementById("timer").innerHTML = time;
+        }, 1000)
+
+        function addZero(input) {
+            if (input < 10) {
+                input = '0' + input;
+            }
+            return input;
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+Strings:
+
+A String is a collection of characters enclosed in double quotes or single quotes.
+
+var str= " " ;
+
+or
+
+var str = ' ';
+
+Strings are immutable in javascript. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+
+    <script>
+
+        var firstName = "Digital";
+        firstName.concat("Lync"); //"DigitalLync"
+        console.log(firstName);
+        firstName = firstName.concat("Lync");;
+        console.log(firstName);
+
+    </script>
+
+</body>
+
+</html>
+
+
+String provide two types of methods.
+
+1. to result in html elements 
+
+example:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <script>
+        var nameOfTheSite = "facebook";
+        var url = "https://www.facebook.com";
+        console.log(nameOfTheSite.link(url));
+        document.getElementById("navbar").innerHTML = nameOfTheSite.link(url);
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Database provides a list of urls and names to be displayed as html links 
+on the UI. 
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <script>
+        var allLinks = [
+            {
+                name: "facebook",
+                url: "https://www.facebook.com"
+            },
+            {
+                name: "youtube",
+                url: "https://www.youtube.com"
+            },
+            {
+                name: "instagram",
+                url: "https://www.instagram.com"
+            },
+            {
+                name: "linkedIn",
+                url: "https://www.linkedin.com"
+            }
+        ]
+
+        var allLinksData = "";
+
+        allLinks.forEach(function (eachLink) {
+
+            allLinksData = allLinksData + eachLink.name.link(eachLink.url) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+
+        })
+        console.log(allLinksData);
+        document.getElementById("navbar").innerHTML = allLinksData;
+
+        var anchorElements = document.getElementsByTagName("a");
+        console.log(anchorElements);
+        for (var i = 0; i < anchorElements.length; i++) {
+            anchorElements[i].setAttribute("target", "_blank");
+        }
+        //  for(var i=0;i<navItems.ch;i++){
+        //  }
+    </script>
+</body>
+
+</html>
+
+other functions:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <script>
+
+        var str = "hello";
+
+        console.log(str.bold());
+        console.log(str.italics());
+        console.log(str.blink());
+        console.log(str.strike());
+        document.getElementById("navbar").innerHTML = str.strike();
+
+    </script>
+</body>
+
+</html>
+
+2. To result in javascript operations.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <script>
+        var username = "            Kiran Kumar        ";
+        console.log(username);
+        console.log(username.length);
+        console.log(username.trim().length);
+        console.log(username.toUpperCase());
+        console.log(username.concat("hyd"));
+
+    </script>
+</body>
+
+</html>
+
+Problem Statement:
+
+
+
+
+
+
+
+
+
+

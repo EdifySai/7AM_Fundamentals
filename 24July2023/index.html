@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <table border="1" width="100%">
+
+        <thead id="thead">
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+    <script>
+        var config = {
+            host: "www.abc.com",
+            serverPort: 9000,
+            ipAddress: "979.11.11.123",
+            s3URL: "https://www.abc.com/abc/xyz",
+            url: "https://www.host.com"
+        }
+        var columns = Object.keys(config);
+        console.log(columns);
+        var allColumnsData = "";
+        columns.forEach(function (column) {
+            allColumnsData = allColumnsData + "<th>" + column + "</th>"
+        })
+        console.log(allColumnsData);
+        document.getElementById("thead").innerHTML = allColumnsData;
+    </script>
+</body>
+
+</html>

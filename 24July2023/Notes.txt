@@ -1,0 +1,186 @@
+Objects:
+
+An Object is a collection of key-value pairs, representation of a 
+realtime entity. 
+
+syntax:
+
+var obj= {
+    key: value, 
+    key: value,
+    key: value,
+    .
+    .
+    .
+    .
+}
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var employee = {
+
+            name: "Kiran",
+            address: "Hyderabad",
+            project: {
+                name: "CRM",
+                client: {
+                    name: "TCS",
+                    location: {
+                        state: "Telangana",
+                        country: "India"
+                    }
+                }
+            }
+        }
+        console.log(employee.name);
+        console.log(employee.project.client.name);
+        console.log(employee.project.client.location.country);
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+Different methods of Objects: 
+
+1.create:  creates a new object from the existing object. 
+
+var bank = {
+            bankName: "ICICI",
+            IFSCCode: 'ICICI89099',
+            branch: "Hyderabad"
+        }
+        var customer = Object.create(bank);
+        console.log(customer);
+        console.log(customer.bankName);
+        customer.cid = 101;
+        customer.name = "ravi kumar";
+        customer.accBalance = 90000;
+        console.log(customer);
+
+2. freeze: used to freeze the object so that no new key-value pairs are added, updated or 
+removed.
+
+
+  var config = Object.freeze({
+            port: 9011,
+            host: "SMTP",
+            URL: "SMTP.COM",
+            client: "XYZ",
+            IP: " 87.11.33.11"
+        });
+        console.log(config.port);
+        config.port = 1234;
+        console.log(config.port);
+        config.serverPort = 9012;
+        console.log(config);
+
+3. If we want to freeze a property, we don't have a direct function, however, we can customize the 
+property by using defineProperty function.
+
+ var config = {
+            port: 9011,
+            host: "www.abc.com"
+        }
+        Object.defineProperty(config, "port", { configurable: false, writable: false });
+        config.port = 9089;
+        config.host = "www.xy.com"
+        console.log(config);
+
+
+4. seal: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var config = Object.seal({
+            port: 9011,
+            host: "www.abc.com",
+            serverPort: 9000
+        });
+        config.host = "www.cab.com";
+        config.connectionPool = 10;
+        console.log(config);
+    </script>
+</body>
+
+</html>
+
+
+5. keys and values: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        var config = {
+            port: 9011,
+            host: "www.abc.com",
+            serverPort: 9000
+        }
+        console.log(Object.keys(config));
+        console.log(Object.values(config));
+
+    </script>
+</body>
+
+</html>
+
+
+
+Problem Statement: 
+
+
+Create a table header based on the keys from the object. 
+
+
+          var config = {
+            port: 9011,
+            host: "www.abc.com",
+            serverPort: 9000, 
+            ipAddress: "979.11.11.123", 
+            s3URL: "https://www.abc.com/abc/xyz"
+        }
+
+
+        port         host            serverPort        ipAddress          s3URL 
+
+
+        Steps:
+
+        1. get the keys using keys function. 
+        2. iterate the keys using loops and each time update the key to be a <th> 
+
+        
+
+
+
+
+
+
+
+
+
+
+
