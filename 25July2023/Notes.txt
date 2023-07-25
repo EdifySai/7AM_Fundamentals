@@ -1,0 +1,141 @@
+Events and Scopes:
+
+Scopes: 
+
+There are 2 types of scopes.
+
+1. Local Scope : local variables will be stored in local scope
+2. Global Scope : global variables will be stored in global scope. 
+
+<html>
+
+  <head>
+
+  </head>
+
+  <body>
+         <script>
+               var a=100;
+               var b=200; 
+                function f1(){
+                   var x=90;
+                   var y=120;
+                     console.log(a);
+                     console.log(b);
+                     console.log(x);
+                     console.log(y);
+                }
+                function f2(){
+                    var e=2;
+                    console.log(e);
+                }
+                f1();
+                console.log(a);
+                console.log(b);
+         </script>
+
+
+  </body>
+
+</html>
+
+
+Events:
+
+Events enable HTML to interact with Javascript. 
+
+Any action is considered as an event, whenever an action happens, there should be 
+handler associated to it which means for every event, we should have 
+event handlers. 
+
+Every event is prefixed with 'on' and we use functions as event handlers.
+HTML provides lot of events interms of event attributes.
+
+Document Ref: https://www.w3schools.com/tags/ref_eventattributes.asp
+
+Problem Statement: 
+
+Restrict a text field from copy, paste. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <input type="text" oncopy="return onCopyHandler()" onpaste="return onPasteHandler()" id="username"
+    placeholder="enter username">
+  <h4 style="color:red" id="message"></h4>
+  <script>
+    function onPasteHandler() {
+      document.getElementById("message").innerHTML = "Pasting the content is disabled";
+      return false;
+    }
+    function onCopyHandler() {
+      document.getElementById("message").innerHTML = "Copying is disabled";
+      return false;
+    }
+  </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Restrict the user from right clicking on the page. 
+
+<html>
+<head>
+</head>
+<body oncontextmenu="return onContextMenuHandler()">
+
+  <h1 id="message"></h1>
+
+  <script>
+    function onContextMenuHandler() {
+
+      alert("right click disabled");
+
+      return false;
+    }
+  </script>
+</body>
+
+</html>
+
+
+Mouse Events:
+
+<html>
+<head>
+</head>
+
+<img id="image" onmouseover="onMouseOverHandler()" onmouseout="onMouseOutHandler()"
+  src="https://rukminim2.flixcart.com/image/200/200/knyxqq80/dslr-camera/r/y/x/digital-camera-eos-m50-mark-ii-eos-m50-mark-ii-canon-original-imag2gzkexzqhyhu.jpeg?q=70">
+
+<script>
+  var image = document.getElementById("image");
+  function onMouseOverHandler() {
+    image.style.width = "205";
+    image.style.height = "178"
+  }
+  function onMouseOutHandler() {
+    image.style.width = "200";
+    image.style.height = "175";
+  }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

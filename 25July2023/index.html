@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+</head>
+<select id="city" onchange="onChangeHandler()">
+  <option>Select your city</option>
+  <option value="hyderabad">Hyderabad</option>
+  <option value="rangareddy">RangaReddy</option>
+  <option value="nizamabad">Nizamabad</option>
+</select>
+<select id="testCenters">
+</select>
+<script>
+  var testCenters = document.getElementById("testCenters");
+  function onChangeHandler() {
+    var city = document.getElementById("city").value;
+
+    switch (city) {
+      case "hyderabad": testCenters.innerHTML = "<option>Hyd 1</option><option>Hyd 2</option>"; break;
+      case "rangareddy": testCenters.innerHTML = "<option>Ranga Reddy 1</option><option>Ranga Reddy 1 2</option>"; break;
+      case "nizamabad": testCenters.innerHTML = "<option>NZ 1</option><option>NZ 2</option>"; break;
+    }
+  }
+
+</script>
+
+</body>
+
+</html>
