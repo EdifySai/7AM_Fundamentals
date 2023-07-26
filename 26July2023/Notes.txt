@@ -1,0 +1,141 @@
+Error Handling: 
+
+Whenever an error occurs , the program gets terminated abnormally which 
+means when ever an unexpected error occurs in the code, the application 
+gets crashed and the service will not be available. 
+
+Error Handling is the process of skipping the code that raises an 
+error and executing the remanining lines of code as it is. 
+
+As part of Error Handling, we should use try and catch blocks.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var user;
+        function getData() {
+            // API Call
+           /* user = {
+                name: "kiran",
+                address: "rajesh"
+            } */
+        }
+        getData();
+        try {
+            console.log(user.name);
+            console.log(user.address);
+        } catch (error) {
+            console.log(error);
+        }
+        var config = {
+            port: 9011,
+            ip: "1.2.3.4"
+        }
+        console.log(config);
+
+    </script>
+
+</body>
+
+</html>
+
+
+finally block:
+
+If there is any code that needs to be executed mandatorily then
+that code should be put into finally block. 
+
+finally block gets executed irrespective of error which means 
+at any cost, the finally block gets executed.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var userData;
+        function fetchUserProfileDetails() {
+            // userData = {
+            //     name: "kiran"
+            // }
+        }
+        try {
+            fetchUserProfileDetails();
+            console.log("DB Connection");
+            console.log(userData.name);
+        } catch (error) {
+            console.log("error", error);
+            throw new Error("Log Error");
+        }
+        finally {
+            console.log("DB Connection close");
+        }
+        var x = 10;
+        console.log(x);
+
+
+    </script>
+
+</body>
+
+</html>
+
+Garbage Collection:
+
+Garbage Collection is the process where the runtime engine calls 
+garbage collector whenever the memory threshold limit is reached. 
+
+The Garbage collector uses mark and sweep algorithm to find the 
+unreferenced objects and remove them from the memory. 
+
+As a developer, it is important for us to write garbage collector 
+friendly code. 
+
+        var employee = {
+            name: "kiran"
+        }
+        console.log(employee);
+
+        employee = null;
+
+        console.log(employee);
+
+Best coding practices:
+
+1. Always follow Naming conventions 
+
+        - variablename, function name should follow camelCase 
+        - function names should be verbs 
+        - variables name should be nouns 
+
+2. Use Comments wherever required to provide concise information 
+about some code. 
+
+3. Use == instead of ===
+
+4. One function should have only max of 10/ 15 lines of code. 
+
+5. One function should take responsibility of one feature. we 
+should not write multiple features code in one function. 
+
+6. Always perform Error handling 
+
+7. Write Garbage Collector Friendly code. 
+
+
+
+
+
+
+
