@@ -1,0 +1,160 @@
+DOM: Document Object Model 
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+
+DOM Methods:
+
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <input type="text" id="username" placeholder="username here">
+    <p></p>
+    <span class="abc"></span>
+    <input type="email" name="emailId" placeholder="email here">
+    <button onclick="capture()">Capture</button>
+    <script>
+        function capture() {
+            var username = document.getElementById("username");
+            console.log(username.value);
+            var p = document.getElementsByTagName("p");
+            p[0].innerHTML = "Hello! I am a dynamic text";
+            var abc = document.getElementsByClassName("abc");
+            console.log(abc);
+            abc[0].innerHTML = "I am a span coming from JS";
+            var emailId = document.getElementsByName("emailId");
+            console.log(emailId[0].value);
+
+        }
+    </script>
+</body>
+
+</html>
+
+
+Events and EventListeners:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p></p>
+    <button>Click</button>
+    <script>
+        var button = document.getElementsByTagName("button");
+        console.log(button);
+        var eventListener = function () {
+            var p = document.getElementsByTagName("p");
+            p[0].innerHTML = "Good Morning!";
+            alert("I am triggered");
+            button[0].removeEventListener('click', eventListener);
+        }
+        button[0].addEventListener('click', eventListener);
+    </script>
+</body>
+
+</html>
+
+Navigation:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p></p>
+    <button>Click</button>
+    <script>
+
+        // document.body.firstChild.nextSibling.nextSibling.nextSibling.addEventListener(
+        //     'click', function () {
+        //         alert("Good Morning!");
+        //     }
+        // )
+
+        document.body.lastChild.previousSibling.previousSibling.addEventListener(
+            'click', function () {
+                alert("Good Morning!");
+            }
+        )
+
+    </script>
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+       <div>
+
+               <div>
+                       
+                           <h1></h1>
+
+               </div>
+
+
+       </div>
+
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div>
+        <div>
+
+            <h1></h1>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        document.body.firstChild.nextSibling.firstChild.nextSibling.firstChild.nextSibling.innerHTML = "Good Morning";
+
+    </script>
+
+</body>
+
+</html>
+
+
+Nodes: 
+
+Every HTML Element is considered as Node, hence we can perform add, delete,update on html elements.
+
+
