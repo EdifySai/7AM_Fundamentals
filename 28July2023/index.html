@@ -1,0 +1,68 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input id="password" type="text" onkeyup="validate()" placeholder="enter password">
+    <span id="message" style="color:red"></span>
+    <script>
+        var message = document.getElementById("message");
+        function validate() {
+            var password = document.getElementById("password").value;
+            var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+            var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+            var digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+            var specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')'];
+            if (password.length < 8) {
+                message.innerHTML = "Password should be atleast 8 chars";
+                return;
+            }
+            else {
+                message.innerHTML = "";
+            }
+            if (checkIfItIsAvailable(upperCase, password)) {
+                message.innerHTML = "";
+            }
+            else {
+                message.innerHTML = "Password should have atleast 1 upper case";
+                return;
+            }
+            if (checkIfItIsAvailable(lowerCase, password)) {
+                message.innerHTML = "";
+            }
+            else {
+                message.innerHTML = "Password should have atleast 1 lower case";
+                return;
+            }
+            if (checkIfItIsAvailable(digits, password)) {
+                message.innerHTML = "";
+            }
+            else {
+                message.innerHTML = "Password should have atleast 1 digit";
+                return;
+            }
+            if (checkIfItIsAvailable(specialCharacters, password)) {
+                message.innerHTML = "";
+            }
+            else {
+                message.innerHTML = "Password should have atleast 1 special character";
+                return;
+            }
+        }
+        function checkIfItIsAvailable(inputArray, password) {
+            var isAvailable = false;
+            for (var i = 0; i < password.length; i++) {
+                if (inputArray.includes(password[i])) {
+                    isAvailable = true;
+                    break;
+                }
+            }
+            return isAvailable;
+        }
+    </script>
+
+</body>
+
+</html>

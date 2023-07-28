@@ -1,0 +1,19 @@
+Validations:
+
+We can categorize Validations into 2 types.
+
+1. basic validations : we use javascript logic to implement.
+2. advanced validations: we use regular expressions.
+
+
+Problem Statement: 
+
+Create validations for the password field with the following 
+constraints.
+
+1. password should be atleast 8 characters 
+2. atleast 1 upper case 
+3. atleast 1 lower case 
+4. atleast 1 digit
+5. atleast 1 special character 
+
