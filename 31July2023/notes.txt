@@ -1,0 +1,231 @@
+Advanced Validations:
+
+To work with Advanced Validations, we need to use regular expressions. 
+
+Regular Expressions: Regular Expressions are used to create search patterns. 
+
+A search pattern is a collection of symbols to match to a specific pattern from 
+the String. 
+
+syntax: 
+
+var pattern = /<pattern>/<modifier>
+
+Problem Statement: 
+
+Find the number of  occurances of a character from the string. 
+
+var str= "hello how are you doing? have a great week start" 
+
+*  Find how many times the 'e' is occured in the above string.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var str = "hello how are you doing? have a great week start";
+        var pattern = /e/g;
+        console.log(str.match(pattern).length);
+
+    </script>
+
+</body>
+
+</html>
+
+modifiers: 
+
+g - global search 
+
+i - case insensitive:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var str = "hello how are you doing? have a great week start, EntEr into a CHAPTER";
+        var pattern = /e/gi;
+        console.log(str.match(pattern).length);
+
+    </script>
+
+</body>
+
+</html>
+
+m- multi line ( Self learn)
+
+test function:
+
+        var str = "hello";
+        var pattern = /E/;
+        console.log(pattern.test(str));
+
+brackets:
+
+The brackets are used to find the range of characters.
+
+[abc]:
+
+  var str = "shellosde";
+        var pattern = /s[abcd]e/;
+        console.log(pattern.test(str));
+
+[^abc]:
+
+ var str = "1ello";
+        var pattern = /[^elo]/;
+        console.log(pattern.test(str));
+
+
+[a-z]:
+
+
+        var str = "657777a";
+        var pattern = /[a-z]/;
+        console.log(pattern.test(str));
+
+
+[^a-z]:
+
+var str = "657777a";
+        var pattern = /[^a-z]/;
+        console.log(pattern.test(str));
+
+[0-9]:
+
+ var str = "a1";
+        var pattern = /[0-9]/;
+        console.log(pattern.test(str));
+
+ [^0-9]:
+
+  var str = "a1";
+        var pattern = /[^0-9]/;
+        console.log(pattern.test(str));
+
+Metacharacters:
+
+Metacharacters represents symbols with a meaningful functionality. 
+
+.(dot):  acts like a placeholder. 
+
+  var str = "a!x";
+        var pattern = /a.x/;
+        console.log(pattern.test(str));
+
+\s: white space 
+
+ var str = "a! x";
+        var pattern = /\s/;
+        console.log(pattern.test(str));
+
+\d: digit
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        var str = "a!1x";
+        var pattern = /\d/;
+        console.log(pattern.test(str));
+    </script>
+
+</body>
+
+</html>
+
+\D: Non digit 
+
+var str = "a!1x";
+var pattern = /\D/;
+console.log(pattern.test(str));
+
+\w: word character ( a-z , A-Z,0-9,_) 
+
+
+  var str = "@#$%^";
+        var pattern = /\w/;
+        console.log(pattern.test(str));
+
+\W: Non Word Charcter (all special characters)
+
+ <script>
+        var str = "1235!%";
+        var pattern = /\W/;
+        console.log(pattern.test(str));
+    </script>
+
+
+Problem Statement: 
+
+
+create a pattern that checks for the domain @gmail.com 
+
+ sai@gmail.com 
+ k@gmail.com 
+ k@gmailcom (false)
+ s@gmail@com (false)
+
+  var str = "sai@gmail.com";
+        var pattern = /@gmail[.]com/;
+        console.log(pattern.test(str));
+
+Quantifiers: 
+
+n+: atleast 1 n  or more.  which means one or more. 
+
+ var str = "xajshdcvjsdvjhvscjvscjvsvsdcvhsdvcjsvdcjhvsdcjvsdjvscjvsdvdy";
+        var pattern = /x[a-z]+y/;
+        console.log(pattern.test(str));
+
+n* : zero or more
+
+ var str = "xy";
+        var pattern = /x[a-z]*y/;
+        console.log(pattern.test(str));
+
+n?: zero or 1 
+
+var str = "xaay";
+        var pattern = /x[a-z]?y/;
+        console.log(pattern.test(str));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
