@@ -1,0 +1,83 @@
+
+Quantifiers continued:
+
+n{X}:
+
+ var str = "hfhfx123yddf";
+        var pattern = /x[0-9]{4}y/;
+        console.log(pattern.test(str));
+
+n{X,Y}: here X is min value, Y is max value.
+
+ var str = "hfhfx3123yddf";
+        var pattern = /x[0-9]{2,4}y/;
+        console.log(pattern.test(str));
+
+n{X,}:
+
+ var str = "hfhfx31233333343443434343433434344yddf";
+        var pattern = /x[0-9]{4,}y/;
+        console.log(pattern.test(str));
+
+^ and $: 
+
+   var str = "x31233333343443434343433434344yddf";
+        var pattern = /^x[0-9]{4,}y$/;
+        console.log(pattern.test(str));
+
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input id="password" type="text" onkeyup="validate()" placeholder="enter password">
+    <span id="message" style="color:red"></span>
+    <script>
+        var message = document.getElementById("message");
+        function validate() {
+            if (password.length < 8) {
+                message.innerHTML = "Password should be atleast 8 chars";
+                return;
+            }
+            else {
+                message.innerHTML = "";
+            }
+            if (/[A-Z]+/.test(password)) {
+                message.innerHTML = "";
+            }
+            else {
+                message.innerHTML = "Password should have atleast 1 upper case";
+                return;
+            }
+            if (/[a-z]+/.test(password)) {
+                message.innerHTML = "";
+            }
+            else {
+                message.innerHTML = "Password should have atleast 1 lower case";
+                return;
+            }
+            if (/[0-9]+/.test(password)) {
+                message.innerHTML = "";
+            }
+            else {
+                message.innerHTML = "Password should have atleast 1 digit";
+                return;
+            }
+            if (/\W+/.test(password)) {
+                message.innerHTML = "";
+            }
+            else {
+                message.innerHTML = "Password should have atleast 1 special character";
+                return;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
