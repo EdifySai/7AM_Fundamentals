@@ -1,0 +1,94 @@
+HTML5:
+
+Web Storage: 
+
+Web Storage is used to store some data at the browser level. 
+
+Web Storage consists of 2 storages.
+
+1. Local Storage :
+
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <h1>Local Storage Demo</h1>
+
+    <script>
+
+        //   localStorage.setItem('username', 'kiran');
+
+        var username = localStorage.getItem("username");
+
+        console.log("username", username);
+        var name = localStorage.getItem("name");
+        console.log(name);
+
+        var abc = localStorage.getItem("abc");
+        console.log(abc);
+
+        console.log(localStorage);
+
+        localStorage.removeItem("username");
+
+        localStorage.clear();
+
+    </script>
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Create a registration page - username, password, email 
+
+store the details in local storage.
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="username"><br><br>
+    <input type="text" id="password"><br><br>
+    <input type="text" id="email"><br><br>
+    <button onclick="register()">Register</button>
+    <script>
+        function register() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var email = document.getElementById("email").value;
+            localStorage.setItem('username', username);
+            localStorage.setItem("password", password);
+            localStorage.setItem("email", email);
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+2. session Storage:
+
+The data is set at tab level. 
+
+sessionStorage.setItem()
+
+sessionStorage.getItem()
+
+
+
+
+
