@@ -1,0 +1,86 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <center>
+
+        <h1>Add Product Here</h1>
+
+        <input size="30" type="text" id="productId" placeholder="enter productId"> <br><br>
+        <input size="30" type="text" id="name" placeholder="enter name"> <br><br>
+        <input size="30" type="text" id="price" placeholder="enter price"> <br><br>
+        <input size="30" type="text" id="seller" placeholder="enter seller"> <br><br>
+        <input size="30" type="text" id="imageURL" placeholder="enter imageURL"> <br><br>
+        <button onclick="addProduct()">Add Product</button>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h1>Products Table</h1>
+
+        <table width="100%" border="1">
+            <thead>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Seller</th>
+                <th>Product Image</th>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </center>
+    <script>
+
+        showProducts();
+
+        if (localStorage.getItem('products') == null) {
+            localStorage.setItem('products', JSON.stringify([]));
+        }
+
+        function addProduct() {
+            var productId = document.getElementById("productId").value;
+            var name = document.getElementById("name").value;
+            var price = document.getElementById("price").value;
+            var seller = document.getElementById("seller").value;
+            var imageURL = document.getElementById("imageURL").value;
+            var product = {
+                productId: productId,
+                name: name,
+                price: price,
+                seller: seller,
+                imageURL: imageURL
+            }
+            console.log(product);
+            var products = JSON.parse(localStorage.getItem('products'));
+            products.push(product);
+            console.log(products);
+            localStorage.setItem('products', JSON.stringify(products));
+            clearFields();
+            showProducts();
+        }
+        function clearFields() {
+            document.getElementById("productId").value = "";
+            document.getElementById("name").value = "";
+            document.getElementById("price").value = "";
+            document.getElementById("seller").value = "";
+            document.getElementById("imageURL").value = "";
+
+        }
+        function showProducts() {
+            var tbody = document.getElementById("tbody");
+            var products = JSON.parse(localStorage.getItem("products"));
+            var productItems = "";
+            for (var i = 0; i < products.length; i++) {
+                var product = products[i];
+                productItems = productItems + "<tr>" + "<td>" + product.productId + "</td>" + "<td>" + product.name + "</td>" + "<td>" + product.price + "</td>" + "<td>" + product.seller + "</td>" + "<td>" + product.imageURL + "</td>" + "</tr>";
+            }
+            tbody.innerHTML = productItems;
+        }
+    </script>
+</body>
+
+</html>
