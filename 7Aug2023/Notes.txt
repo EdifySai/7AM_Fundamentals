@@ -1,0 +1,60 @@
+Session Storage: 
+
+A Session is an interval of time.
+
+W.R.T Session Storage, If we want to store some data for a session, then we 
+can use Session Storage, However, It works only till the tab is opened, if the 
+tab is closed, then the session data is erased. 
+
+We cannot set time for Session Storage.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+        <script>
+        
+  sessionStorage.setItem("username", "kiran");
+         </script>
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+Store an array of products into sessionStorage and retrieve them. 
+
+Hint: 
+
+JSON.stringify(), JSON.parse()
+
+[{id:101},{id:102},{id:103}]
+
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        // var products = [{ id: 101 }, { id: 102 }, { id: 103 }
+        // sessionStorage.setItem('products', JSON.stringify(products));
+        var products = JSON.parse(sessionStorage.getItem("products"));
+        console.log(products);
+    </script>
+</body>
+
+</html>
+
+
+
+
+

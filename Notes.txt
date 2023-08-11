@@ -1,0 +1,146 @@
+Tag: 
+
+A tag is a keyword that is enclosed in angular brackets. 
+
+<html>, <head>,<digitallync>, <h1>
+
+
+Attributes: 
+
+An Attribute is a key value pair that enhances the capability of a html element.
+
+
+Example: Input element has got multiple attributes. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" placeholder="username here" size="50">
+</body>
+
+</html>
+
+We can categorize html attributes into 3 types.
+
+1. Element Specific attributes: 
+
+Attributes that can be applied only to that Specific element is known as element Specific attribute.
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" placeholder="username here" size="50">
+</body>
+
+</html>
+
+2. Global Attributes:
+
+These attributes can be used with any html element. 
+
+Ref:
+
+https://www.w3schools.com/tags/ref_standardattributes.asp
+
+<html>
+
+<head>
+
+
+    <style>
+        .theme1 {
+            color: whitesmoke;
+            background: grey;
+            font-family: cursive
+        }
+
+        .theme2 {
+            color: grey;
+            background-color: black
+        }
+
+        .theme3 {
+            color: green;
+            background-color: red
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center; color:green">This is some header</h1>
+
+    <p style="background-color: red; font-size: 50px">This is some paragraph</p>
+
+    <h2 class="theme1">This is a header 2</h2>
+
+    <h2 class="theme2">This is another header</h2>
+
+    <p class="theme2">Para</p>
+
+</body>
+
+</html>
+
+
+3. Event Attributes: 
+
+Any action is considered as an event. 
+
+whenever an event occurs, there should be an event handler. 
+
+<htnl>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <button onclick="greetings()">Greet</button>
+
+        <script>
+
+            function greetings() {
+                alert("Good Morning!!");
+            }
+
+
+        </script>
+
+    </body>
+</htnl>
+
+
+Ref: https://www.w3schools.com/tags/ref_eventattributes.asp 
+
+Problem Statement: 
+
+Disable copying, pasting of content in a text field. 
+
+<htnl>
+
+    <head>
+
+    </head>
+
+    <body oncontextmenu="return false">
+        <input type="text" onpaste="return false" oncopy="return false">
+    </body>
+</htnl>
+
+
+
+
+
+
+
