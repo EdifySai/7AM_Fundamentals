@@ -1,0 +1,387 @@
+@Rules: 
+
+Here Rule stands for some operation that needs to be set. 
+
+The @import: rule imports another style sheet into the current style sheet.
+
+The @charset rule indicates the character set the style sheet uses.
+
+The @font-face rule is used to exhaustively describe a font face for use in a document.
+
+
+Media Types and Media Queries:
+
+These are used to provide the responsiveness to the web pages. 
+
+
+@media rule for responsiveness.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: pink;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+    font-family:cursive; 
+    font-size:24px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Resize the browser window to see the effect!</h1>
+<p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+
+</body>
+</html>
+
+Rounded Corners:
+
+property: border-radius
+
+<html>
+
+<head>
+    <style>
+        #rcorners1 {
+            border-radius: 125px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <p id="rcorners1">Rounded corners!</p>
+
+</body>
+
+</html>
+
+
+Border Images:
+
+border-image: url(border.png) 30 round; 
+
+Multi Background:
+
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url("abc.jpeg"), url("img2.jpeg"), url('img3.jpeg');
+            background-repeat: no-repeat, no-repeat;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
+
+
+Gradients:
+
+
+Linear:
+
+<html>
+
+<head>
+    <style>
+        body {
+
+            background: linear-gradient(red, green, yellow)
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
+
+
+Radial:
+
+<html>
+
+<head>
+    <style>
+        body {
+
+            background: radial-gradient(red, green, yellow)
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
+
+
+Conic:
+
+<html>
+
+<head>
+    <style>
+        body {
+
+            background: conic-gradient(red, green, yellow)
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
+
+CSS Shadow Effects:
+
+text shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 2px 2px red;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+</body>
+</html>
+
+
+
+box-shadow:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px green;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+
+<div>This is a div element with a box-shadow</div>
+
+</body>
+</html>
+
+Transformations:
+
+2D Transformation:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv {
+  transform: rotate(60deg);
+}
+</style>
+</head>
+<body>
+
+<h1>The rotate() Method</h1>
+
+<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated clockwise 20 degrees.
+</div>
+
+</body>
+</html>
+
+3D Transformation:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#myDiv {
+  transform: rotateZ(150deg);
+}
+</style>
+</head>
+<body>
+
+<h1>The rotateX() Method</h1>
+
+<p>The rotateX() method rotates an element around its X-axis at a given degree.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated 150 degrees.
+</div>
+
+</body>
+</html>
+
+
+Animations:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 14s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>The animation-iteration-count property specifies the number of times an animation should run. The following example will run the animation 3 times before it stops:</p>
+
+<div></div>
+
+</body>
+</html>
+
